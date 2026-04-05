@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0dc7c8ac-60d2-4d2e-8b48-d7187cc9ea25" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/EmotesMod/Modules/Components/EmoteBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmotesMod/Modules/Components/EmoteWheelItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmotesMod/Modules/ScriptableObjects/Emote.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmotesMod/Networking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmotesMod/Patches/PlayerControlPatches.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VisorShaders/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VisorShaders/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VisorShaders/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VisorShaders/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VisorShaders.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VisorShaders/Patches/CameraPatches.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VisorShaders/VisorShaders.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VisorShaders/VisorShadersPlugin.cs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6c3f2085f70249bda627c2f212432e5c29b800/b8/bc68cdf8/ScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9c0f9eb89a6c413cb1f56477965a73b52d3200/38/ecc10953/PlayerPhysics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9dbf80842dec4a8c9bb9bbacb43fbc0e74ba00/0f/836449ac/RpcPlayAnimationMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmotesMod/Assets.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmotesMod/Modules/Components/EmoteBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmotesMod/Modules/Components/EmoteWheelItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmotesMod/Networking.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmotesMod/Patches/PlayerControlPatches.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3Az68fTyqzAdqv8UjT4cRtBL42n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0dc7c8ac-60d2-4d2e-8b48-d7187cc9ea25" name="Changes" comment="" />
+      <created>1773582895775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773582895775</updated>
+      <workItem from="1773582897777" duration="4058000" />
+      <workItem from="1773587562394" duration="7504000" />
+      <workItem from="1773596250812" duration="2467000" />
+      <workItem from="1773608632551" duration="8000" />
+      <workItem from="1773609439471" duration="1472000" />
+      <workItem from="1773611257413" duration="2249000" />
+      <workItem from="1773652953092" duration="1177000" />
+      <workItem from="1775326761927" duration="16000" />
+      <workItem from="1775329534383" duration="674000" />
+      <workItem from="1775332951645" duration="1977000" />
+      <workItem from="1775336167457" duration="355000" />
+      <workItem from="1775337259902" duration="2137000" />
+      <workItem from="1775340345765" duration="38000" />
+      <workItem from="1775340500084" duration="198000" />
+      <workItem from="1775341324174" duration="1005000" />
+      <workItem from="1775344863348" duration="458000" />
+      <workItem from="1775384648430" duration="2925000" />
+      <workItem from="1775408597273" duration="1326000" />
+      <workItem from="1775418560143" duration="1784000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
