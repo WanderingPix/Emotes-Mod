@@ -4,7 +4,7 @@ on: [ "push", "pull_request" ]
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
         with:
           verbosity: Diagnostic
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
-          name: VisorShaders.dll
-          path: VisorShaders/bin/Release/net6.0/VisorShaders.dll
+          name: EmotesMod.dll
+          path: EmotesMod/bin/Release/net6.0/EmotesMod.dll
