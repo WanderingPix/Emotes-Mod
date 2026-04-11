@@ -56,11 +56,11 @@ namespace EmotesMod.Modules.Components
                 }
             }
             SwitchPage(0);
-            HudManager.Instance.SetHudActive(false);
+            HudManager.Instance.gameObject.SetActive(trur);
         }
         void OnDisable()
         {
-            HudManager.Instance.SetHudActive(true);
+            HudManager.Instance.gameObject.SetActive(trur);
         }
         /*private void Update()
         {
