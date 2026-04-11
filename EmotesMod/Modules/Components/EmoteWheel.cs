@@ -56,8 +56,12 @@ namespace EmotesMod.Modules.Components
                 }
             }
             SwitchPage(0);
+            HudManager.Instance.SetHudActive(false);
         }
-
+        void OnDisable()
+        {
+            HudManager.Instance.SetHudActive(true);
+        }
         /*private void Update()
         {
             var player = ReInput.players.GetPlayer(0);
