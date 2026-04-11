@@ -20,7 +20,7 @@ public class HudManagerPatches
     {
         if (EmoteCanvas == null) return;
 
-        if (/*ReInput.players.GetPlayer(0).GetButtonDown(InputPatches.OpenEmoteWheelBind.id)*/ Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.LeftControl) && PlayerControl.LocalPlayer && !PlayerControl.LocalPlayer.Data.IsDead)
+        if (/*ReInput.players.GetPlayer(0).GetButtonDown(InputPatches.OpenEmoteWheelBind.id)*/ Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.LeftControl) && PlayerControl.LocalPlayer && !PlayerControl.LocalPlayer.Data.IsDead)
         {
             var wheel = EmoteCanvas.transform.GetChild(0).gameObject;
             wheel.SetActive(!wheel.activeSelf);
@@ -48,6 +48,10 @@ public class HudManagerPatches
         if (OperatingSystem.IsAndroid())
         {
             CreateButtonAndroid();
+        }
+        else
+        {
+            __instance.Chat.AddChatWarning("<size=150%>Thanks for downloading Emotes Mod!</size>\nTo open the emote wheel, press Control + E!");
         }
     }
 
