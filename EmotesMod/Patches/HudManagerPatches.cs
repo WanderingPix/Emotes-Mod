@@ -1,6 +1,7 @@
 using System;
 using EmotesMod.Modules.Components;
 using HarmonyLib;
+using Rewired;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -19,13 +20,13 @@ public class HudManagerPatches
     {
         if (EmoteCanvas == null) return;
 
-        if (Input.GetKeyDown(KeyCode.E) && Input.GetKey(KeyCode.LeftControl))
+        if (/*ReInput.players.GetPlayer(0).GetButtonDown(InputPatches.OpenEmoteWheelBind.id)*/ Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.LeftControl) && PlayerControl.LocalPlayer && !PlayerControl.LocalPlayer.Data.IsDead)
         {
             var wheel = EmoteCanvas.transform.GetChild(0).gameObject;
             wheel.SetActive(!wheel.activeSelf);
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (/*ReInput.players.GetPlayer(0).GetButtonDown(InputPatches.StopEmotingBind.id)*/ Input.GetKeyDown(KeyCode.X)&& PlayerControl.LocalPlayer.GetComponent<EmoteBehaviour>().currentEmote)
         {
             PlayerControl.LocalPlayer.RpcStopEmote();
         }
@@ -38,7 +39,7 @@ public class HudManagerPatches
         EmoteCanvas = Object.Instantiate(Assets.EmoteCanvas);
         EmoteCanvas.transform.GetChild(0).gameObject.SetActive(false);
         EmoteCanvas.transform.GetChild(1).gameObject.SetActive(false);
-        EmoteCanvas.transform.GetChild(1).GetChild(2).GetComponent<Button>().onClick.AddListener(new Action(() =>
+        EmoteCanvas.transform.GetChild(1).GetChild(1).GetComponent<Button>().onClick.AddListener(new Action(() =>
         {
             PlayerControl.LocalPlayer.RpcStopEmote();
             EmoteCanvas.transform.GetChild(1).gameObject.SetActive(false);
@@ -52,18 +53,18 @@ public class HudManagerPatches
 
     public static void CreateButtonAndroid()
     {
-        var Button = UnityEngine.Object
+        var button = UnityEngine.Object
             .Instantiate(HudManager.Instance.SettingsButton, HudManager.Instance.SettingsButton.transform.parent)
             .GetComponent<PassiveButton>();
-        Button.gameObject.name = "EmoteButton";
-        Button.OnClick = new();
-        Button.OnClick.AddListener(new Action(() =>
+        button.gameObject.name = "EmoteButton";
+        button.OnClick = new();
+        button.OnClick.AddListener(new Action(() =>
         {
             var wheel = EmoteCanvas.transform.GetChild(0).gameObject;
             wheel.SetActive(!wheel.activeSelf);
         }));
-        Button.activeSprites.GetComponent<SpriteRenderer>().sprite = Assets.EmoteButtonHover;
-        Button.inactiveSprites.GetComponent<SpriteRenderer>().sprite = Assets.EmoteButton;
-        Button.GetComponent<AspectPosition>().DistanceFromEdge = new(4.75f, 0.505f, -400f);
+        button.activeSprites.GetComponent<SpriteRenderer>().sprite = Assets.EmoteButtonHover;
+        button.inactiveSprites.GetComponent<SpriteRenderer>().sprite = Assets.EmoteButton;
+        button.GetComponent<AspectPosition>().DistanceFromEdge = new(4.75f, 0.505f, -400f);
     }
 }

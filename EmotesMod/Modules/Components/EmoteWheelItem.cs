@@ -23,6 +23,7 @@ namespace EmotesMod.Modules.Components
         {
             PlayerControl.LocalPlayer.RpcPlayEmote(Emote.Value.name);
             HudManagerPatches.EmoteCanvas.transform.GetChild(0).gameObject.SetActive(false);
+            SoundManager.Instance.PlaySound(HudManager.Instance.MapButton.ClickSound, false);
         }
 
 

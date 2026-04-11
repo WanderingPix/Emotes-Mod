@@ -46,7 +46,7 @@ namespace EmotesMod.Modules.Components
 
         public IEnumerator CoHandleContinuousEmote()
         {
-            HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(true);
+            if (pc.AmOwner) HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(true);
             pc.cosmetics.gameObject.SetActive(false);
             while (currentEmote)
             {
