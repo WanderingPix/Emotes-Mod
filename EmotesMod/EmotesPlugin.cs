@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace EmotesMod;
 
-[BepInAutoPlugin("missingpixel.emotesmod", "Emotes Mod", "1.1.1")]
+[BepInAutoPlugin("EmotesMod", "Emotes Mod", "1.1.2")]
 [BepInProcess("Among Us.exe")]
 [ReactorModFlags(ModFlags.RequireOnAllClients)]
 [BepInDependency(ReactorPlugin.Id)]
