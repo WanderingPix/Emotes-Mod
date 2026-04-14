@@ -28,7 +28,7 @@ namespace EmotesMod.Modules.Components
             pc.cosmetics.gameObject.SetActive(false);
             if (loop)
             {
-                Vector2 originalPos = PlayerControl.LocalPlayer.GetTruePosition();
+                Vector2 originalPos = pc.GetTruePosition();
                 while (originalPos == pc.GetTruePosition())
                 {
                     pc.MyPhysics.Animations.Animator.Play(currentEmote.anim.Value);
