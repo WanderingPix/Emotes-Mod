@@ -24,12 +24,12 @@ namespace EmotesMod.Modules.Components
 
         public IEnumerator CoHandleIdleEmote(bool loop)
         {
-            if (pc.amOwner) HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(true);
+            if (pc.AmOwner) HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(true);
             pc.cosmetics.gameObject.SetActive(false);
             if (loop)
             {
                 Vector2 originalPos = pc.GetTruePosition();
-                while (originalPos == pc.GetTruePosition())
+                while (currentEmote && originalPos == pc.GetTruePosition())
                 {
                     pc.MyPhysics.Animations.Animator.Play(currentEmote.anim.Value);
                     yield return new WaitForSeconds(currentEmote.anim.Value.length);
@@ -40,7 +40,7 @@ namespace EmotesMod.Modules.Components
             pc.cosmetics.gameObject.SetActive(true);
             currentEmote = null!;
             pc.MyPhysics.Animations.PlayIdleAnimation();
-            HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(false);
+            if (pc.AmOwner) HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(false);
             yield break;
         }
 
