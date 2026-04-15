@@ -24,7 +24,7 @@ namespace EmotesMod.Modules.Components
 
         public IEnumerator CoHandleIdleEmote(bool loop)
         {
-            HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(true);
+            if (pc.amOwner) HudManagerPatches.EmoteCanvas.transform.GetChild(1).gameObject.SetActive(true);
             pc.cosmetics.gameObject.SetActive(false);
             if (loop)
             {
