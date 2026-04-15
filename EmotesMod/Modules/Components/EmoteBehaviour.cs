@@ -29,7 +29,7 @@ namespace EmotesMod.Modules.Components
             if (loop)
             {
                 Vector2 originalPos = pc.GetTruePosition();
-                while (originalPos == pc.GetTruePosition())
+                while (currentEmote && originalPos == pc.GetTruePosition())
                 {
                     pc.MyPhysics.Animations.Animator.Play(currentEmote.anim.Value);
                     yield return new WaitForSeconds(currentEmote.anim.Value.length);
