@@ -1,8 +1,5 @@
-using System.Linq;
 using EmotesMod.Modules.Components;
 using HarmonyLib;
-using Rewired;
-using UnityEngine;
 
 namespace EmotesMod.Patches;
 
@@ -16,7 +13,7 @@ public class PlayerControlPatches
         __instance.gameObject.AddComponent<EmoteBehaviour>().pc = __instance;
         __instance.MyPhysics.Animations.glowAnimator.gameObject.SetActive(false);
     }
-    
+
     [HarmonyPatch(typeof(PlayerPhysics), nameof(PlayerPhysics.HandleAnimation))]
     [HarmonyPrefix]
     public static bool PlayerPhysics_Awake_Prefix(PlayerPhysics __instance)
@@ -31,7 +28,7 @@ public class PlayerControlPatches
 
         return true;
     }
-    
+
     [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.Die))]
     [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.OnGameEnd))]
     [HarmonyPatch(typeof(PlayerControl), nameof(PlayerControl.OnGameStart))]

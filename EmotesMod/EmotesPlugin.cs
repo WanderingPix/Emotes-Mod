@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace EmotesMod;
 
-[BepInAutoPlugin("EmotesMod", "Emotes Mod", "1.1.2")]
+[BepInAutoPlugin("EmotesMod", "Emotes Mod", "1.2.0")]
 [BepInProcess("Among Us.exe")]
 [ReactorModFlags(ModFlags.RequireOnAllClients)]
 [BepInDependency(ReactorPlugin.Id)]
@@ -23,6 +23,7 @@ public partial class EmotesPlugin : BasePlugin
     public override void Load()
     {
         ClassInjector.RegisterTypeInIl2Cpp<Emote>();
+        ClassInjector.RegisterTypeInIl2Cpp<EmoteWheel>();
         ClassInjector.RegisterTypeInIl2Cpp<EmoteWheelItem>();
         ClassInjector.RegisterTypeInIl2Cpp<EmoteBehaviour>();
         ClassInjector.RegisterTypeInIl2Cpp<EmoteWheel>();
