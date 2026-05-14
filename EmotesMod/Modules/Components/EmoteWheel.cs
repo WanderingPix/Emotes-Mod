@@ -48,7 +48,6 @@ namespace EmotesMod.Modules.Components
         }
         void OnEnable()
         {
-            HudManager.Instance.gameObject.SetActive(false);
             if (pages.Count == 0)
             {
                 for (int i = 0; i != pagesParent.Value.transform.childCount; i++)
@@ -57,6 +56,7 @@ namespace EmotesMod.Modules.Components
                 }
             }
             SwitchPage(0);
+            HudManager.Instance.gameObject.SetActive(false);
         }
         void OnDisable()
         {
